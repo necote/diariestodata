@@ -1,48 +1,27 @@
 ---
 layout: page
-title: What is Wax?
+title: About the Project
 permalink: /about/
 ---
 
-**Wax helps you create digital exhibits.**   
-A digital exhibit is a collection of curated cultural artifacts—manuscripts, paintings, photographs, sculptures, etc—often accompanied by an explicit narrative or argument. Though Wax focuses on images and text, it could be used for sound or video collections with some customization.
+### Overview
 
-**Wax is an extensible workflow based on minimal computing principles.**  
-Wax is hyper-aware of differences in resources, control and access around the world and close to home. As a result, it is purposefully lightweight: a few Ruby gems, some customizable UI components, good documentation and (hopefully soon!) recipes for creating, deploying, and maintaining custom digital exhibitions.
+On the large scale this project dealt with how we use data and visualization to understand human lives, and what can be gained through applying humanistic theory to those practices. It viewed data creation and visualization as cyclic close-reading processes that can be used to develop interpretation on and engagement with the other. In particular, this project aimed to use these practices to look into the loose-leaf archival objects collected by Katherine Bradley (1846-1914) and Edith Cooper (1862-1913), the aunt and niece (lovers, poets, and diarists) who wrote and lived together as Michael Field. The  outputs consisted of an exploratory and experimental take on a network graph that examined the topics and sentiments of correspondence and epistolary relationships documented in the loose-leaf letters, as well as an open dataset through which viewers might understand how the loose-leaf objects have been classified.
 
-**The exhibition sites created by Wax are static.**  
-This means they consist of flat HTML, CSS, and JavaScript files that don't need to communicate in a complex way back to a server. This makes them cheaper, safer, and generally easier to maintain.
+### Data Creation
 
-**The skills needed to create Wax sites are agnostic.**  
-This means they are largely transferable for use in other digital projects. 'Learning Wax' does not mean learning how to use a platform. It involves learning the fundamentals of web development, data management, and [plain text editing](https://zapier.com/blog/beginner-ultimate-guide-markdown/) while leveraging a few great open source libraries and frameworks along the way.
+The data collection process for this project was/is iterative, as the building-up of the visualization and data was/is cyclic. It was based on document review, a close examining of each of the loose-leaf objects included in notebook 29B of the Michael Field diaries.* The initial goal was to identify what the loose-leaf material contains, on a whole, as there was no pre-existing record to reference. When it was clear that the visualization would focus on the letters, more nuanced data was developed on only that object type, and added to the data. Going forward this may be built upon to create new visualizations based on new interpretations of the material. The dataset, as it exists for this project, includes  classifications of both the loose-leaf material generally and the more in-depth data used to build the visualization.
 
-**Wax keeps the collection presentation separate from the collection data.**  
-The Wax workflow starts with making standardized image files and metadata records and builds around them, handling canonical information, scholarly content, and site styling differently and deliberately. This makes it easier for you or others to share, reuse and reimagine your collection data in other contexts.
+The metrics that were used for the data collection taxonomy can be accessed [here](https://drive.google.com/file/d/12ZKRwxLteJW6rofbAPulm5Rk8cmJ3mcb/view?usp=sharing).
 
-## Who is Wax for?
+### Visualization
 
-Wax was created for individuals and groups who either don't have or don't want to use a lot of resources to create their scholarly or cultural exhibits. It's best suited for folks who are willing to take on some technical responsibility in exchange for a lot of flexibility.
+The visualization is an experimental take on a network graph; a product of my attempt to apply humanistic visual theory to the actual visualization process. It is an intentional departure from what is traditionally understood as data visualization. The language of flowers is employed in this work as an unfixed visual language through which viewers can explore my interpretation of the sentiments and topics included in the loose-leaf correspondence. It is also a visual language that was chosen for its particular ties to Michael Field, by their use of flower symbologies in their daily correspondence and in their writing. Viewers are provided with information about the letter-writers in aggregate, through the wreaths that surround their names, and through specific  relationships on the vines that connecting two parties.
 
-For beginners, Wax has a relatively high, but general-purpose learning curve. To get the most out of Wax, you should have some familiarity with:
+The visualization is available here.  The letter-writers’ wreaths are available as individual images here.
 
-- Using an interactive shell (e.g., Bash/Terminal) to install and interact with programs, files, and directories on your local computer.
-- Using Git and GitHub to version control and collaborate on projects.
-- Using Jekyll to generate static sites.
-- Creating and normalizing data files (e.g., CSV, JSON, YAML)
-- Using file-naming conventions and best practices.
-- Editing HTML, CSS, and some JavaScript.
+### Contact
 
-**However, Wax is also great for teaching or learning the skills above!** For examples of digital pedagogy via the creation of Wax exhibitions, check out [this workshop](https://www.columbia.edu/content/events/introduction-minimal-computing-humanities-building-exhibit-primary-sources-using-wax), [this GitHub repository](https://github.com/stylerevolution/stylerevolution.github.io), and [this custom Wax site](https://stylerevolution.github.io/).
+Please contact the researcher with any queries regarding this project. You can do so by opening an issue in the GitHub [repository](https://github.com/necote/diariestodata) for this project. 
 
-**Wax is also phenomenal for professionals who play a facilitating role**, such as Digital Scholarship Librarians or Coordinators. With some practice, Wax substantially reduces the time to production and post-production maintenance costs for you and your team. In the most common scenario, students, faculty, colleagues or any other collaborators just have to provide you with a properly formatted spreadsheet and the text for the exhibits. The extras are up to you.
-
-
-## So what does the Wax workflow *look like?*
-
-Below is a diagram to give you a zoomed-out view. In summary, you create a file of metadata records for your collection (in CSV, YAML, or JSON format), organize your collection image files, and put both in the Jekyll site folder. After updating your configuration, you run a few command line tasks to prepare the data and metadata for use by the Jekyll site. Jekyll then uses special layouts and Wax components to build the exhibit and spits them out as static pages ready to publish.
-
-From there, you can run tests on your site to catch errors and decide where and how to put it online or in offline media.
-
-<a href="{{ '/img/wax_workflow.jpg' | absolute_url }}">
-  <img src="{{ '/img/wax_workflow.jpg' | absolute_url }}"/>
-</a>
+(*) Accessed via the Michael Field Diary Archive, now available [here](https://michaelfielddiary.dartmouth.edu/home). If you would like to look at the diaries themselves, as they become available digitally, do explore this site. 
