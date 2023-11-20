@@ -8,5 +8,5 @@ banner:
   height: '500px'
 ---
 
-Welcome to the Diaries to Data project. This site explains the details involved in making the Michael Field Diaries Loose-Leaf Correspondence visualization. Please navigate above to explore the material or go straight to the [visualization](necote.github.io/diariestodata/visualization). 
+Welcome to the Diaries to Data project. This site explains the details involved in making the Michael Field Diaries Loose-Leaf Correspondence visualization. Please navigate above to explore the material. 
 
